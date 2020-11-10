@@ -3,8 +3,8 @@ import json
 import time
 
 timer = 1
+data = open('itm.txt',"w+")
 while timer == 1:
-    times = 0
     file = requests.get('https://web.trafi.com/api/additional-transport/vilnius/carsharing')
     car = json.loads(file.text)
     for i in car["cars"]:
@@ -13,7 +13,7 @@ while timer == 1:
         print(x)
         print(y["lat"])
         print(y["lng"])
-        times =+ 1
-    print("timecount: ", times)
-    print("sec: ", times*60)
+        data.write(str(x) + "\n")
+        data.write(str(y["lat"]) + "\n")
+        data.write(str(y["lng"]) + "\n")
     time.sleep(60)
