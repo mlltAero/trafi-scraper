@@ -25,8 +25,5 @@ while i != 60:
     for plateNumber in carsLastPosition:
         if carsLastPosition[plateNumber]["timesMove"] != 0:
             print("Car with plate number " + plateNumber + " has moved " + str(carsLastPosition[plateNumber]["timesMove"]) + " times.")
-    time.sleep(30)
+    time.sleep(2)
     i += 1
-file = open("C:\\stuff\\main.txt", "w+", encoding="utf-16")
-for plateNumber in carsLastPosition:
-    file.write("Car with plate number " + plateNumber + " has moved " + str(carsLastPosition[plateNumber]["timesMove"]) + " times.\n")
