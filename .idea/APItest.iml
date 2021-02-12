@@ -7,5 +7,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="mokymasis-residentsdata" />
+    <orderEntry type="module" module-name="PythonExercises" />
+    <orderEntry type="module" module-name="STT" />
   </component>
 </module>
